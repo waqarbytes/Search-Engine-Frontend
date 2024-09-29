@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unified Search Engine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Unified Search Engine</h1>
+            <p>Search for YouTube videos, articles, and academic papers.</p>
+        </header>
+
+        <section class="search-section">
+            <form id="search-form">
+                <input type="text" id="search-term" placeholder="Search for content...">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section id="results-section">
+            <!-- Search results will be displayed here -->
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+
+</html>

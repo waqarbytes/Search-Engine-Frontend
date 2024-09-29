@@ -1,5 +1,9 @@
 from flask import Flask, render_template, jsonify, request
 app = Flask(__name__)
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "https://search-engine-backend2.onrender.com"}})
 
 @app.route('/')
 def home():
